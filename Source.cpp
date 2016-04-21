@@ -36,14 +36,14 @@ void WelcomeScreen() {
     string cheatCode = "TJISLIFE";
 
     ClearScreen();
-	cout << "Tj Town version 1.5" << endl;
-	cout << "Created by Jeremy Bahadirli on 04/14/16" << endl << endl << endl << endl;
+    cout << "Tj Town version 1.5" << endl;
+    cout << "Created by Jeremy Bahadirli on 04/14/16" << endl << endl << endl << endl;
     cout << "Welcome to Tj Town!!" << endl << endl;
     cout << "The point of the game is to become the wealthiest man in Tj Town. It will not be";
-	cout << "very difficult because there is only one citizen in the town and his name is . ." << endl;
+    cout << "very difficult because there is only one citizen in the town and his name is . ." << endl;
     cout << "TJJTJTJTJTJTJTJTJTJTJ!!!!!!!!!!!!!!" << endl << endl;
-	cout << "Just kidding, there are two people in the town and the other person is Daniela" << endl;
-	cout << "(whose dog is named Doggo) and she has " << daniBucks << " " << currency << "S. Good Luck." << endl << endl;
+    cout << "Just kidding, there are two people in the town and the other person is Daniela" << endl;
+    cout << "(whose dog is named Doggo) and she has " << daniBucks << " " << currency << "S. Good Luck." << endl << endl;
     cout << "You can go to the Farm to earn " << currency << "S, and head to the" << endl;
     cout << "Bank to cash in and inevitably lose." << endl << endl;
     cout << "Type \"" << inputCheck << "\" to begin." << endl << endl;
@@ -61,9 +61,9 @@ void WelcomeScreen() {
             loop = false;
         } else {
             GameOver("You suck.");
-			WelcomeScreen();
-			loop = false;
-		}
+    WelcomeScreen();
+        loop = false;
+        }
     }
 }
 
@@ -191,7 +191,7 @@ void Farm(int risk) {
             cout << "S";
         cout << ". The answer was " << answer << "." << endl;
     }
-	this_thread::sleep_for(chrono::milliseconds(2000));
+    this_thread::sleep_for(chrono::milliseconds(2000));
 }
 
 void Bank() {
@@ -213,17 +213,17 @@ void GameOver(string message) {
     lastRisk = 0;
     riskCount = 0;
 
-	int input = 0;
-	ClearScreen();
-	cout << message << endl << endl;
-	cout << "1. Try again" << endl;
-	cout << "2. Exit" << endl;
-	cout << "Entry: ";
-	do {
-		cin >> input;
-	} while (input < 1 || input > 2);
+    int input = 0;
+    ClearScreen();
+    cout << message << endl << endl;
+    cout << "1. Try again" << endl;
+    cout << "2. Exit" << endl;
+    cout << "Entry: ";
+    do {
+        cin >> input;
+    } while (input < 1 || input > 2);
 
-	if (input == 2) {
-		exit(0);
-	}
+    if (input == 2) {
+        exit(0);
+    }
 }
