@@ -32,7 +32,7 @@ int main(void)
 
 void WelcomeScreen() {
     string input = "";
-    string inputCheck = "FAGGOT";
+    string inputCheck = "SILLY";
     string cheatCode = "TJISLIFE";
 
     ClearScreen();
